@@ -95,7 +95,7 @@ Create a thread and run it in a single request.
 | `thread` | object  | Optional | |
 | `model` | string or null  | Optional | The ID of the Model deployment name to be used to execute this run. If a value is provided here, it will override the model deployment name associated with the assistant. If not, the model deployment name associated with the assistant will be used.|
 | `instructions` | string or null  | Optional | Override the default system message of the assistant. This is useful for modifying the behavior on a per-run basis.|
-| `tools` | array or null  | Optional | Override the tools the assistant can use for this run. This is useful for modifying the behavior on a per-run basis.|
+| s` | array or null  | Optional | Override the tools the assistant can use for this run. This is useful for modifying the behavior on a per-run basis.|
 | `metadata` | map  | Optional | Set of 16 key-value pairs that can be attached to an object. This can be useful for storing additional information about the object in a structured format. Keys can be a maximum of 64 characters long and values can be a maximum of 512 characters long.|
 
 ### Returns
@@ -437,7 +437,7 @@ When a run has the status: "requires_action" and required_action.type is submit_
 
 |Name | Type | Required | Description |
 |---  |---   |---       |--- |
-| `tool_outputs | array | Required | A list of tools for which the outputs are being submitted. |
+| `tool_outputs` | array | Required | A list of tools for which the outputs are being submitted. |
 
 ### Returns
 
